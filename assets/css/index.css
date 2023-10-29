@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#game-board{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    gap: 5px;
+    width: 400px;
+    height: 400px;
+}
+
+.cell {
+    width: 100%;
+    background-color: fff;
+    border: 1px solid black ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.missed {
+    background-color: red;
+}
+
+.hit {
+    background-color: green;
+    color: #fff;
+}
+
+.status {
+    font-size: 14px;
+}
