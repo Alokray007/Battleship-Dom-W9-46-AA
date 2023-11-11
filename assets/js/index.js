@@ -35,7 +35,6 @@ window.addEventListener("DOMContentLoaded", e => {
         // Clear the game board and reset the board object
         divMain.innerHTML = "";
         board = new Board();
-        console.log(board.grid);
 
         // Reset the game state
         gameOver = false;
@@ -49,7 +48,6 @@ window.addEventListener("DOMContentLoaded", e => {
                 cell.dataset.row = row;
                 cell.dataset.col = col;
                 gameBoard.appendChild(cell);
-
                 cell.addEventListener("click", handleClick);
             }
         }
@@ -70,7 +68,6 @@ window.addEventListener("DOMContentLoaded", e => {
         } else {
             e.target.classList.add("hit");
             e.target.textContent = result;
-            console.log(numRemaining);
         }
 
         if (board.isGameOver()) {
