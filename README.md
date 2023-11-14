@@ -9,7 +9,7 @@ game board.
 
 Clone the practice from the [starter].
 
-## Background and Context
+## Background and Context-
 
 See details of the [Battleship][battleship] game here if you are not familiar
 with the game.
